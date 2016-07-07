@@ -23,6 +23,6 @@ foreach (VARIANT ${VARIANTS})
     target_link_libraries(test_et_${VARIANT} ettestlib_${VARIANT})
 
     install(TARGETS ettestlib_${VARIANT} DESTINATION lib)
-    install(TARGETS test_et_${VARIANT} DESTINATION lib)
+    install(TARGETS test_et_${VARIANT} DESTINATION bin)
 
 endforeach()
